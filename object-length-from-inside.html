@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Data Aggregation</h2>
+
+<script>
+var person = {
+  fname: "John",
+  lname : "Doe",
+  length : function() {
+    return Object.keys(this).length-1;
+  }
+};
+document.body.innerHTML += `
+length: ${person.length()}
+`;
+</script>
+
+</body>
+</html>
